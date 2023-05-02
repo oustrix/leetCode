@@ -3,10 +3,10 @@
 func arraySign(nums []int) int {
     negative := false
     for _, num := range nums {
-        if num == 0 {
-            return 0
-        } else if num < 0 {
+        if num < 0 {
             negative = !negative
+        } else if num == 0 {
+            return 0
         }
     }
 
