@@ -1,14 +1,18 @@
 // 1822. Sign of the Product of an Array
 
 func arraySign(nums []int) int {
-    sign := 1
+    negative := false
     for _, num := range nums {
         if num == 0 {
             return 0
         } else if num < 0 {
-            sign *= -1
+            negative = !negative
         }
     }
 
-    return sign
+    if negative {
+        return -1
+    } else {
+        return 1
+    }
 }
