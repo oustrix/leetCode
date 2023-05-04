@@ -3,13 +3,8 @@ package tasks
 // 649. Dota2 Senate
 
 import (
-	"log"
 	"strings"
 )
-
-func Main() {
-	log.Println(predictPartyVictory("RDD"))
-}
 
 func predictPartyVictory(senate string) string {
 	for strings.Contains(senate, "R") && strings.Contains(senate, "D") {
