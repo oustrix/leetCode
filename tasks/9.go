@@ -1,5 +1,5 @@
 // 9. Palindrome Number
-package leetCode
+package tasks
 
 import (
 	"math"
