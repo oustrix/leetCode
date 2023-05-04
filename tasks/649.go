@@ -27,8 +27,6 @@ func predictPartyVictory(senate string) string {
 					senate = strings.Replace(senate, "D", "", 1)
 				}
 			}
-
-			log.Printf("i: %d, senate: %s\n", i, senate)
 		}
 	}
 
