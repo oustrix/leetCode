@@ -1,12 +1,6 @@
 package tasks
 
-import "log"
-
 // 13. Roman to Integer
-
-func Main() {
-	log.Println(romanToInt("MCMXCIV"))
-}
 
 func romanToInt(s string) int {
 	nums := map[rune]int{
